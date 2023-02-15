@@ -18,8 +18,9 @@ emp2 = Employee()   #// this is an object
 print(emp1.company_name)
 print(emp2.company_name)
 ```
-```diff
-+ output-
+> [!NOTE]
+> output
+```
   'BST'
   'BST'
 ```
