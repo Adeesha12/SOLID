@@ -1,6 +1,8 @@
 # SOLID
 ## oop learning
 
+<details><summary>## Basic</summary>
+<p>
 ### **Class**
 ```python
 class Employee: #// this is a class
@@ -23,3 +25,8 @@ print(emp2.company_name)
   'BST'
   'BST'
 ```
+
+</p>
+</details>
+
+
