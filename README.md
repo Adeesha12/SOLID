@@ -1,13 +1,13 @@
 # SOLID
 ## oop learning
 
-### **simple class**
+### **Class**
 ```python
 class Employee: #// this is a class
     pass
 ```
 
-### **class attribute**
+### **Class attribute**
 ```python
 class Employee: #// this is a class
     company_name = 'BST' #// this is class attribute
@@ -21,5 +21,5 @@ print(emp2.company_name)
 ```diff
 + output-
   'BST'
-    'BST'
+  'BST'
 ```
