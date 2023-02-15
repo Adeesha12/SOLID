@@ -34,7 +34,7 @@ class Employee: #// this is a class
 emp1 = Employee()   #// this is an object
 emp2 = Employee()   #// this is an object
 
-emp1.name = 'rick'  #// this is a 
+emp1.name = 'rick'  #// this is a instance attribute
 
 print(emp1.company_name)
 print(emp2.company_name)
@@ -42,6 +42,7 @@ print(emp2.company_name)
 print(emp1.name)   
 print(emp2.name) 
 ```
+There is a one instace attribute so it will throw an attribute for emp2.name which is not exist !
 > output
 ```
 BST
