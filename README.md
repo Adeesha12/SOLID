@@ -53,6 +53,29 @@ Traceback (most recent call last):
     print(emp2.name)   
 AttributeError: 'Employee' object has no attribute 'name'
 ```
+Pythonic way of declaring attribute 
+
+```python
+class Employee: #// this is a class
+    pass
+
+
+emp1 = Employee()   #// this is an object
+emp2 = Employee()   #// this is an object
+
+Employee.company_name = 'BST' #// this is class attribute
+
+emp1.name = 'rick'  #// this is an instance attribute
+emp2.name = 'morty'
+
+print(emp1.company_name)
+print(emp2.company_name)
+   
+print(emp1.name)   
+print(emp2.name)  
+```
+
+
 </details>
 
 
