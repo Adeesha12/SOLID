@@ -26,6 +26,32 @@ print(emp2.company_name)
   'BST'
 ```
 
+### **Instance attribute**
+```python
+class Employee: #// this is a class
+    company_name = 'BST' #// this is class attribute
+
+emp1 = Employee()   #// this is an object
+emp2 = Employee()   #// this is an object
+
+emp1.name = 'rick'  #// this is a 
+
+print(emp1.company_name)
+print(emp2.company_name)
+   
+print(emp1.name)   
+print(emp2.name) 
+```
+> output
+```
+BST
+BST
+rick
+Traceback (most recent call last):
+  File "/_path_/SOLID/file_name.py", line 13, in <module>
+    print(emp2.name)   
+AttributeError: 'Employee' object has no attribute 'name'
+```
 </details>
 
 
