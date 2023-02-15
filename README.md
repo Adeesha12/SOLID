@@ -1,8 +1,8 @@
 # SOLID
 ## oop learning
+## Basic
+<details><summary color = 'green'> details </summary>
 
-<details><summary>## Basic</summary>
-<p>
 ### **Class**
 ```python
 class Employee: #// this is a class
@@ -26,7 +26,6 @@ print(emp2.company_name)
   'BST'
 ```
 
-</p>
 </details>
 
 
