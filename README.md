@@ -1,7 +1,7 @@
 # SOLID
 ## oop learning
 ## Basic
-<details><summary color = 'green'> details </summary>
+<details><summary> <a color = 'green'>details</a> </summary>
 
 ### **Class**
 ```python
