@@ -1,13 +1,13 @@
 # SOLID
-##oop learning
+## oop learning
 
-###**simple class**
+### **simple class**
 ```python
 class Employee: #// this is a class
     pass
 ```
 
-###**class attribute**
+### **class attribute**
 ```python
 class Employee: #// this is a class
     company_name = 'BST' #// this is class attribute
