@@ -59,21 +59,34 @@ Pythonic way of declaring attribute
 class Employee: #// this is a class
     pass
 
-
 emp1 = Employee()   #// this is an object
 emp2 = Employee()   #// this is an object
 
 Employee.company_name = 'BST' #// this is class attribute
 
-emp1.name = 'rick'  #// this is an instance attribute
-emp2.name = 'morty'
+emp1.name = 'Rick'       #// this is an instance attribute
+emp1.lastname ='Bernard' #// this is an instance attribute
+emp2.name = 'Morty'      #// this is an instance attribute
+emp2.lastname = 'Meyer'  #// this is an instance attribute
 
 print(emp1.company_name)
 print(emp2.company_name)
    
-print(emp1.name)   
-print(emp2.name)  
+print(emp1.name +' '+emp1.lastname)   
+print(emp2.name +' '+emp2.lastname)   
 ```
+```
+BST
+BST
+Rick Bernard
+Morty Meyer
+```
+But this kind of declaration are not practical to use beacuse it vialate DRY (don't repeat youself) method
+and create much complexity.
+
+! class varibles preferes to declare before the all methods
+
+
 
 
 </details>
