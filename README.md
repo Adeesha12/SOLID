@@ -81,14 +81,38 @@ BST
 Rick Bernard
 Morty Meyer
 ```
-**But this kind of declaration are not practical to use beacuse it violate DRY (don't repeat youself) method
+**But this kind of declaration are not practical to use because it violate DRY (don't repeat youself) method
 and create much complexity.**
 
 * class varibles preferes to declare before the all methods
 
-* for instace attribute it is recommand to use __init__ method beacuse when assign instace it variables are auto 
-asign
+* for instace attribute it is recommand to use __init__ method in a class,when every time creating an instaces 
+it variables are automatically assigned
 
+```python
+class Employee: #// this is a class
+    company_name = 'BST' #// this is class attribute
+    
+    def __init__(self,name,lastname) -> None:
+        self.name = name              #// this is an instance attribute
+        self.lastname = lastname      #// this is an instance attribute
+        
+emp1 = Employee('Rick','Bernard')   #// this is an object with instance attributes
+emp2 = Employee('Morty','Meyer')   #// this is an object with instance attributes
+
+
+print(emp1.company_name)
+print(emp2.company_name)
+   
+print(emp1.name +' '+emp1.lastname)   
+print(emp2.name +' '+emp2.lastname)     
+```
+```
+BST
+BST
+Rick Bernard
+Morty Meyer
+```
 
 
 </details>
