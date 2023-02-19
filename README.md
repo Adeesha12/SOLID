@@ -90,15 +90,15 @@ and create much complexity.**
 it variables are automatically assigned
 
 ```python
-class Employee: #// this is a class
-    company_name = 'BST' #// this is class attribute
+class Employee:               #// this is a class
+    company_name = 'BST'      #// this is class attribute
     
     def __init__(self,name,lastname) -> None:
         self.name = name              #// this is an instance attribute
         self.lastname = lastname      #// this is an instance attribute
         
-emp1 = Employee('Rick','Bernard')   #// this is an object with instance attributes
-emp2 = Employee('Morty','Meyer')   #// this is an object with instance attributes
+emp1 = Employee('Rick','Bernard')     #// this is an object with instance attributes
+emp2 = Employee('Morty','Meyer')      #// this is an object with instance attributes
 
 
 print(emp1.company_name)
@@ -114,7 +114,29 @@ Rick Bernard
 Morty Meyer
 ```
 
+```python
+class Employee:           #// this is a class
+    company_name = 'BST'  #// this is class attribute
+    
+emp1 = Employee()         #// this is an object
 
+print(emp1.__dict__)      #// this printout the instace attriute as a dictionary which is none this point
+print(emp1.company_name)  #// this print out class attribute
+
+emp1.company_name = 'new company' #// this ia an instance attribute
+
+print(emp1.__dict__)      #// this printout the instace attriute as a dictionary
+print(emp1.company_name)  #// this printout the instace attriute 
+
+print(Employee.company_name) #// this print out class attribute
+```
+```
+{}
+BST
+{'company_name': 'new company'}
+new company
+BST
+```
 </details>
 
 
