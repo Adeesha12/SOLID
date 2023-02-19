@@ -81,7 +81,7 @@ BST
 Rick Bernard
 Morty Meyer
 ```
-But this kind of declaration are not practical to use beacuse it vialate DRY (don't repeat youself) method
+* But this kind of declaration are not practical to use beacuse it vialate DRY (don't repeat youself) method
 and create much complexity.
 
 ! class varibles preferes to declare before the all methods
