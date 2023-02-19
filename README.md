@@ -81,11 +81,13 @@ BST
 Rick Bernard
 Morty Meyer
 ```
-* But this kind of declaration are not practical to use beacuse it vialate DRY (don't repeat youself) method
-and create much complexity.
+**But this kind of declaration are not practical to use beacuse it violate DRY (don't repeat youself) method
+and create much complexity.**
 
-! class varibles preferes to declare before the all methods
+* class varibles preferes to declare before the all methods
 
+* for instace attribute it is recommand to use __init__ method beacuse when assign instace it variables are auto 
+asign
 
 
 
