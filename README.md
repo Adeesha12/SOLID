@@ -161,7 +161,10 @@ class Dog(Animal):                 #// this is the inheretance
         return super().activity()  #// this call the superclass/baseclass method 
 
 class Fish(Animal):
-    
+
+    def __init__(self, age, sex) -> None: #// this call the super class init method
+        super().__init__(age, sex)
+
     def activity(self):            #// this is method overriding
         return f"i can swim and my age {self.age} and i am a {self.sex}"
 
@@ -180,6 +183,11 @@ print(fish.activity())
 super() method will get the super class / base class method  to child class
 
 if there same method in child class we can either call super class method or override the method
+
+uses of inheritance 
+> since child class can inherete all the functionaly from parent class it allows code reusability
+> once functionality developed we can simply inherete it no need to reinvete the wheel, this way code become much cleaner 
+> since we can inherete useful functionality to child class need to write other requireds funcitonaliy to the child class
 
 </details>
 
