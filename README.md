@@ -189,6 +189,37 @@ uses of inheritance
 > 2.) once functionality developed we can simply inherete it no need to reinvete the wheel, this way code become much cleaner <br>
 > 3.) since we can inherete useful functionality to child class need to write other requireds funcitonaliy to the child class <br>
 
+### **Python polymorphism**
+the word polymorphism meaning is many-forms it means that every functions or classes either it built into user define it should be handle many senarios, 
+
+>built in
+```python
+#// here we looks into len() built-in function
+print(len('string'))           
+print(len(['l','i','s','t']))
+# // len function can handle string, list, tuples and many more data types 
+```
+>output
+```
+6
+4
+```
+>user define
+```python
+def add(x,y,z=0,a=0):
+    return x+y+z+a
+
+print(add(1,2))
+print(add(1,2,5))
+#// define function can handle more inputs
+```
+>output
+```
+3
+8
+```
+>classes
+
 </details>
 
 
