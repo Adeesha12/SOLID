@@ -139,9 +139,9 @@ BST
 ```
 ### **Python Inheritance**
 
-to have inheretance there should be a relationship within base class and child classes
-ex:-
-animal is basle class to dog,cat and fish these child classes 
+to have inheretance there should be a relationship within base class and child classes<br>
+ex:-<br>
+animal is base class to dog,cat and fish these child classes<br> 
 vehical is base class to car,van and boat child classes 
 
 ```python
@@ -204,7 +204,7 @@ print(len(['l','i','s','t']))
 6
 4
 ```
->user define
+#### user define
 ```python
 def add(x,y,z=0,a=0):
     return x+y+z+a
@@ -219,7 +219,39 @@ print(add(1,2,5))
 8
 ```
 >classes
+```python
+class SriLanka():
+	def capital(self):
+		print("Colombo is the capital of Sri Lanka.")
 
+	def language(self):
+		print("Sinhala is the most widely spoken language of Sri Lanka.")
+
+	def status(self):
+		print("Sri Lanka is a developing country.")
+
+class USA():
+	def capital(self):
+		print("Washington, D.C. is the capital of USA.")
+
+	def language(self):
+		print("English is the primary language of USA.")
+
+	def status(self):
+		print("USA is a developed country.")
+
+def func(obj):    #// this is a example for duck typing in polymorsim 
+	obj.capital()
+	obj.language()
+	obj.status()
+
+obj_sri = SriLanka()
+obj_usa = USA()
+
+func(obj_sri)
+func(obj_usa)
+
+```
 </details>
 
 
