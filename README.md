@@ -252,7 +252,11 @@ func(obj_sri)
 func(obj_usa)
 
 ```
-<details><summary> ways-of-implementing-polymorphism-in-python </summary>
+<details>
+<summary> 
+
+##  ways of implementing polymorphism in python 
+</summary>
 
 ### Duck typing
 ### Operator overloading
