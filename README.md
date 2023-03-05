@@ -180,9 +180,9 @@ print(fish.activity())
 "i can walk and my age 15 and i am a male"
 "i can swim and my age 5 and i am a female"
 ```
-super() method will get the super class / base class method  to child class
+super() method will get the super class / base class method  to child class.
 
-if there same method in child class we can either call super class method or override the method
+if there same method in child class we can either call super class method or override the method.
 
 uses of inheritance 
 > 1.) since child class can inherete all the functionaly from parent class it allows code reusability <br>
@@ -218,7 +218,7 @@ print(add(1,2,5))
 3
 8
 ```
->classes
+#### classes
 ```python
 class SriLanka():
 	def capital(self):
@@ -252,6 +252,14 @@ func(obj_sri)
 func(obj_usa)
 
 ```
+<details><summary> ways-of-implementing-polymorphism-in-python </summary>
+
+### Duck typing
+### Operator overloading
+### Method Overloading
+### Method overiding
+
+</details>
 </details>
 
 
