@@ -252,18 +252,127 @@ func(obj_sri)
 func(obj_usa)
 
 ```
+>output
+```
+Colombo is the capital of Sri Lanka.
+Sinhala is the most widely spoken language of Sri Lanka.
+Sri Lanka is a developing country.
+Washington, D.C. is the capital of USA.
+English is the primary language of USA.
+USA is a developed country.
+```
+
 <details>
 <summary> 
 
-##  ways of implementing polymorphism in python 
+###  ways of implementing polymorphism in python 
 </summary>
 
-### Duck typing
-### Operator overloading
-### Method Overloading
-### Method overiding
+#### Duck typing
+```python
+class person01:
+    def code(self,idea):
+        idea.execute()
+        
+class person02:
+    def execute(self): 
+        print("Practice make everything perfect")
+
+idea = person02() #// create person02 object
+
+quote = person01()#// person01 object
+
+quote.code(idea)#// calling the function by giving idea as the argument.
+```
+>output
+```
+Practice make everything perfect
+```
+Duck typing is a concept that says that "type" of the object is a matter of concern only at runtime.
+the idea is that you don't need a type in order to invoke an existing method on an object if a method is defined on it, it can invoke.
+#### Operator overloading
+```python
+class Vehical:
+    def __init__(self,fare):
+        self.fare = fare
+    #// operator + overloading 
+    def __add__(self,other):   
+        return self.fare + other.fare
+    #// operator < overloading
+    def __lt__(self,other):
+        return self.fare < other.fare
+        
+bus = Vehical(50)
+car = Vehical(30)
+
+total_fare = bus + car #// objects with operators 
+is_gerater = bus < car #// objects with operators 
+
+print(total_fare)
+print(is_gerater)
+```
+>output
+```
+80
+False
+```
+if we does not operator overloading + ,< or any other operator in user-define class it does not work instead return TypeError 
+#### Method Overloading
+```python
+class Cal:
+    def total(self,a=0,b=0,c=0): #// this is method overloading 
+        return int(a+b+c)
+    
+    
+c = Cal()
+print(c.total())
+print(c.total(1))
+print(c.total(1,2))
+print(c.total(1,2,3))
+```
+>output
+```
+0
+1
+3
+6
+```
+#### Method overiding
+```python
+class HardWork:
+    def __init__(self) -> None:
+        self.value = "hard work beats talent"
+        
+    def practice(self):
+        print(self.value)
+        
+    def consistency(self): #// this method override by child class "consistency" method
+        print('Never stop working hard')
+        
+class Programming(HardWork):
+    
+    def consistency(self):#// this method overriding the base class "consistency" method
+        print('never stop working hard for your dreams...!')
+    
+python = Programming()
+
+python.practice()
+python.consistency()
+```
+>output
+```
+hard work beats talent
+never stop working hard for your dreams...!
+```
+method overriding help us to access and change the parent class logics whatever we need.
 
 </details>
+
+Coupling
+Cohesion
+Association
+Aggregation
+Composition
 </details>
 
 
