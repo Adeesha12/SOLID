@@ -1,9 +1,16 @@
 # SOLID
-## oop learning
-## Basic
-<details><summary> <a color = 'green'>details</a> </summary>
 
-### **Class**
+<details><summary> 
+
+### Basic OOP Concepts 
+</summary>
+
+<details><summary> 
+
+
+### **Class and Object**
+ </summary>
+
 ```python
 class Employee: #// this is a class
     pass
@@ -137,7 +144,13 @@ BST
 new company
 BST
 ```
+</details>
+
+<details><summary> 
+
 ### **Python Inheritance**
+ </summary>
+
 
 to have inheretance there should be a relationship within base class and child classes<br>
 ex:-<br>
@@ -188,8 +201,13 @@ uses of inheritance
 > 1.) since child class can inherete all the functionaly from parent class it allows code reusability <br>
 > 2.) once functionality developed we can simply inherete it no need to reinvete the wheel, this way code become much cleaner <br>
 > 3.) since we can inherete useful functionality to child class need to write other requireds funcitonaliy to the child class <br>
+</details>
 
-### **Python polymorphism**
+<details><summary>
+
+### **Python Polymorphism**
+ </summary>
+
 the word polymorphism meaning is many-forms it means that every functions or classes either it built into user define it should be handle many senarios, 
 
 >built in
@@ -262,8 +280,7 @@ English is the primary language of USA.
 USA is a developed country.
 ```
 
-<details>
-<summary> 
+<details><summary> 
 
 ###  ways of implementing polymorphism in python 
 </summary>
@@ -367,7 +384,7 @@ never stop working hard for your dreams...!
 method overriding help us to access and change the parent class logics whatever we need.
 
 </details>
-
+</details>
 Coupling
 Cohesion
 Association
