@@ -284,8 +284,11 @@ USA is a developed country.
 
 ###  ways of implementing polymorphism in python 
 </summary>
+</details><details><summary>
 
 #### Duck typing
+</summary>
+
 ```python
 class person01:
     def code(self,idea):
@@ -307,7 +310,11 @@ Practice make everything perfect
 ```
 Duck typing is a concept that says that "type" of the object is a matter of concern only at runtime.
 the idea is that you don't need a type in order to invoke an existing method on an object if a method is defined on it, it can invoke.
+</details><details><summary>
+
 #### Operator overloading
+</summary>
+
 ```python
 class Vehical:
     def __init__(self,fare):
@@ -334,7 +341,11 @@ print(is_gerater)
 False
 ```
 if we does not operator overloading + ,< or any other operator in user-define class it does not work instead return TypeError 
+</details><details><summary>
+
 #### Method Overloading
+</summary>
+
 ```python
 class Cal:
     def total(self,a=0,b=0,c=0): #// this is method overloading 
@@ -354,7 +365,12 @@ print(c.total(1,2,3))
 3
 6
 ```
+</details>
+<details><summary>
+
 #### Method overiding
+</summary>
+
 ```python
 class HardWork:
     def __init__(self) -> None:
@@ -382,7 +398,7 @@ hard work beats talent
 never stop working hard for your dreams...!
 ```
 method overriding help us to access and change the parent class logics whatever we need.
-
+</details>
 </details>
 </details>
 Coupling
