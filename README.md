@@ -284,7 +284,7 @@ USA is a developed country.
 
 ###  ways of implementing polymorphism in python 
 </summary>
-</details><details><summary>
+<details><summary>
 
 #### Duck typing
 </summary>
