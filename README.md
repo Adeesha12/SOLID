@@ -428,10 +428,10 @@ print(car.mileage())
 25km per liter
 None
 ```
-in python , abstract class hold both abstract methods and normal methods <br>
-derive class definition define on abstract base class  <br>
-there is no initiate in abstract class, in abstract class cannot create object <br>
-there is no way to define interface on python,instead we can use keyword abstract class itself <br>
+1.in python , abstract class hold both abstract methods and normal methods <br>
+2.derive class definition define on abstract base class  <br>
+3.there is no initiate in abstract class, in abstract class cannot create object <br>
+4.there is no way to define interface on python,instead we can use keyword abstract class itself <br>
 </details>
 <details><summary>
 
