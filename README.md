@@ -391,6 +391,56 @@ method overriding help us to access and change the parent class logics whatever 
 
 </details>
 </details>
+
+<details><summary>
+
+### **Python Abstraction** </summary>
+ 
+Abstraction in python means that hiding data/class form user to reduce the complexcity of software.
+```python
+from abc import ABC,abstractmethod
+
+class Vehical(ABC):
+    @abstractmethod
+    def mileage(self):
+        pass
+    
+class Car(Vehical):
+    
+    def mileage(self):
+        print('25km per liter') 
+        
+class Van(Vehical):
+    
+    def mileage(self):
+        print('15KM per liter')
+        
+class Plane(Vehical):
+    
+    def mileage(self):
+        print('1km per liter')
+        
+car = Car()
+print(car.mileage())
+```
+>output
+```
+25km per liter
+None
+```
+in python , abstract class hold both abstract methods and normal methods <br>
+derive class definition define on abstract base class  <br>
+there is no initiate in abstract class, in abstract class cannot create object <br>
+there is no way to define interface on python,instead we can use keyword abstract class itself <br>
+</details>
+<details><summary>
+
+### **Python Encapsulation** </summary>
+
+
+</details>
+
+
 Coupling
 Cohesion
 Association
