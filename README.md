@@ -49,13 +49,13 @@ print(emp2.company_name)
 print(emp1.name)   
 print(emp2.name) 
 ```
-There is a one instace attribute so it will throw an attribute for emp2.name which is not exist !
+There is a one instance attribute so it will throw an attribute for emp2.name which is not exist !
 > output
 ```
 BST
 BST
 rick
-Traceback (most recent call last):
+Trace back (most recent call last):
   File "/_path_/SOLID/file_name.py", line 13, in <module>
     print(emp2.name)   
 AttributeError: 'Employee' object has no attribute 'name'
@@ -72,15 +72,15 @@ emp2 = Employee()   #// this is an object
 Employee.company_name = 'BST' #// this is class attribute
 
 emp1.name = 'Rick'       #// this is an instance attribute
-emp1.lastname ='Bernard' #// this is an instance attribute
+emp1.last_name ='Bernard' #// this is an instance attribute
 emp2.name = 'Morty'      #// this is an instance attribute
-emp2.lastname = 'Meyer'  #// this is an instance attribute
+emp2.last_name = 'Meyer'  #// this is an instance attribute
 
 print(emp1.company_name)
 print(emp2.company_name)
    
-print(emp1.name +' '+emp1.lastname)   
-print(emp2.name +' '+emp2.lastname)   
+print(emp1.name +' '+emp1.last_name)   
+print(emp2.name +' '+emp2.last_name)   
 ```
 ```
 BST
@@ -88,21 +88,21 @@ BST
 Rick Bernard
 Morty Meyer
 ```
-**But this kind of declaration are not practical to use because it violate DRY (don't repeat youself) method
+**But this kind of declaration are not practical to use because it violate DRY (don't repeat yourself) method
 and create much complexity.**
 
-* class varibles preferes to declare before the all methods
+* class variables prefers to declare before the all methods
 
-* for instace attribute it is recommand to use __init__ method in a class,when every time creating an instaces 
+* for instance attribute it is recommend to use __init__ method in a class,when every time creating an instances 
 it variables are automatically assigned
 
 ```python
 class Employee:               #// this is a class
     company_name = 'BST'      #// this is class attribute
     
-    def __init__(self,name,lastname) -> None:
+    def __init__(self,name,last_name) -> None:
         self.name = name              #// this is an instance attribute
-        self.lastname = lastname      #// this is an instance attribute
+        self.last_name = last_name      #// this is an instance attribute
         
 emp1 = Employee('Rick','Bernard')     #// this is an object with instance attributes
 emp2 = Employee('Morty','Meyer')      #// this is an object with instance attributes
@@ -111,8 +111,8 @@ emp2 = Employee('Morty','Meyer')      #// this is an object with instance attrib
 print(emp1.company_name)
 print(emp2.company_name)
    
-print(emp1.name +' '+emp1.lastname)   
-print(emp2.name +' '+emp2.lastname)     
+print(emp1.name +' '+emp1.last_name)   
+print(emp2.name +' '+emp2.last_name)     
 ```
 ```
 BST
@@ -127,13 +127,13 @@ class Employee:           #// this is a class
     
 emp1 = Employee()         #// this is an object
 
-print(emp1.__dict__)      #// this printout the instace attriute as a dictionary which is none this point
+print(emp1.__dict__)      #// this printout the instance attribute as a dictionary which is none this point
 print(emp1.company_name)  #// this print out class attribute
 
 emp1.company_name = 'new company' #// this ia an instance attribute
 
-print(emp1.__dict__)      #// this printout the instace attriute as a dictionary
-print(emp1.company_name)  #// this printout the instace attriute 
+print(emp1.__dict__)      #// this printout the instance attribute as a dictionary
+print(emp1.company_name)  #// this printout the instance attribute 
 
 print(Employee.company_name) #// this print out class attribute
 ```
@@ -152,10 +152,10 @@ BST
  </summary>
 
 
-to have inheretance there should be a relationship within base class and child classes<br>
+to have inheritance there should be a relationship within base class and child classes<br>
 ex:-<br>
 animal is base class to dog,cat and fish these child classes<br> 
-vehical is base class to car,van and boat child classes 
+vehicle is base class to car,van and boat child classes 
 
 ```python
 class Animal:                     #// this is the base class / super class
@@ -168,10 +168,10 @@ class Animal:                     #// this is the base class / super class
         return f"i can walk and my age {self.age} and i am a {self.sex}"
     
     
-class Dog(Animal):                 #// this is the inheretance 
+class Dog(Animal):                 #// this is the inheritance 
     
     def activity(self):
-        return super().activity()  #// this call the superclass/baseclass method 
+        return super().activity()  #// this call the superclass/base class method 
 
 class Fish(Animal):
 
@@ -198,9 +198,9 @@ super() method will get the super class / base class method  to child class.
 if there same method in child class we can either call super class method or override the method.
 
 uses of inheritance 
-> 1.) since child class can inherete all the functionaly from parent class it allows code reusability <br>
-> 2.) once functionality developed we can simply inherete it no need to reinvete the wheel, this way code become much cleaner <br>
-> 3.) since we can inherete useful functionality to child class need to write other requireds funcitonaliy to the child class <br>
+> 1.) since child class can inherit all the functionality from parent class it allows code reusability <br>
+> 2.) once functionality developed we can simply inherit it no need to reinvent the wheel, this way code become much cleaner <br>
+> 3.) since we can inherit useful functionality to child class need to write other required functionality to the child class <br>
 </details>
 
 <details><summary>
@@ -208,7 +208,7 @@ uses of inheritance
 ### **Python Polymorphism**
  </summary>
 
-the word polymorphism meaning is many-forms it means that every functions or classes either it built into user define it should be handle many senarios, 
+the word polymorphism meaning is many-forms it means that every functions or classes either it built into user define it should be handle many scenarios, 
 
 >built in
 ```python
@@ -258,7 +258,7 @@ class USA():
 	def status(self):
 		print("USA is a developed country.")
 
-def func(obj):    #// this is a example for duck typing in polymorsim 
+def func(obj):    #// this is a example for duck typing in polymorphism 
 	obj.capital()
 	obj.language()
 	obj.status()
@@ -312,7 +312,7 @@ the idea is that you don't need a type in order to invoke an existing method on 
 #### Operator overloading
 
 ```python
-class Vehical:
+class Vehicle:
     def __init__(self,fare):
         self.fare = fare
     #// operator + overloading 
@@ -322,14 +322,14 @@ class Vehical:
     def __lt__(self,other):
         return self.fare < other.fare
         
-bus = Vehical(50)
-car = Vehical(30)
+bus = Vehicle(50)
+car = Vehicle(30)
 
 total_fare = bus + car #// objects with operators 
-is_gerater = bus < car #// objects with operators 
+is_greater = bus < car #// objects with operators 
 
 print(total_fare)
-print(is_gerater)
+print(is_greater)
 ```
 >output
 ```
@@ -359,7 +359,7 @@ print(c.total(1,2,3))
 3
 6
 ```
-#### Method overiding
+#### Method overriding
 
 ```python
 class HardWork:
@@ -396,26 +396,26 @@ method overriding help us to access and change the parent class logics whatever 
 
 ### **Python Abstraction** </summary>
  
-Abstraction in python means that hiding data/class form user to reduce the complexcity of software.
+Abstraction in python means that hiding data/class form user to reduce the complexity of software.
 ```python
 from abc import ABC,abstractmethod
 
-class Vehical(ABC):
+class Vehicle(ABC):
     @abstractmethod
     def mileage(self):
         pass
     
-class Car(Vehical):
+class Car(Vehicle):
     
     def mileage(self):
         print('25km per liter') 
         
-class Van(Vehical):
+class Van(Vehicle):
     
     def mileage(self):
         print('15KM per liter')
         
-class Plane(Vehical):
+class Plane(Vehicle):
     
     def mileage(self):
         print('1km per liter')
@@ -436,7 +436,18 @@ None
 <details><summary>
 
 ### **Python Encapsulation** </summary>
+in python encapsulation is concept of bundling data and methods within single unit.
+so example when we write a class, we try to implement encapsulation.
+because all the methods, instances are bind by class it self 
+```python
+class Employee:                           #// wrapping data and the methods that work on data within one unit (encapsulation)
+    def __init__(self,name,project):
+        self.name = name             #// Data members
+        self.project = project       #// Data members
 
+    def work(self):                  #// method 
+        print(f'{self.name} is working on {self.project}')
+```
 
 </details>
 
