@@ -18,7 +18,7 @@ class USA():
 	def status(self):
 		print("USA is a developed country.")
 
-def func(obj):    #// this is a example for duck typing in polymorsim 
+def func(obj):    #// this is a example for duck typing in polymorphism 
 	obj.capital()
 	obj.language()
 	obj.status()

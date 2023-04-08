@@ -8,7 +8,7 @@ class Animal:                     #// this is the base class / super class
         return f"i can walk and my age {self.age} and i am a {self.sex}"
     
     
-class Dog(Animal):                 #// this is the inheretance 
+class Dog(Animal):                 #// this is the inheritance 
     
     def activity(self):
         return super().activity()  #// this call the superclass/baseclass method 

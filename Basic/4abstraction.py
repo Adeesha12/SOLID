@@ -1,21 +1,21 @@
 from abc import ABC,abstractmethod
 
-class Vehical(ABC):
+class Vehicle(ABC):
     @abstractmethod
     def mileage(self):
         pass
     
-class Car(Vehical):
+class Car(Vehicle):
     
     def mileage(self):
         print('25km per liter') 
         
-class Van(Vehical):
+class Van(Vehicle):
     
     def mileage(self):
         print('15KM per liter')
         
-class Plane(Vehical):
+class Plane(Vehicle):
     
     def mileage(self):
         print('1km per liter')

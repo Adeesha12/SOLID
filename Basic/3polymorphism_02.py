@@ -1,4 +1,4 @@
-class Vehical:
+class Vehicle:
     def __init__(self,fare):
         self.fare = fare
     
@@ -8,11 +8,11 @@ class Vehical:
     def __lt__(self,other):
         return self.fare < other.fare
         
-bus = Vehical(50)
-car = Vehical(30)
+bus = Vehicle(50)
+car = Vehicle(30)
 
 total_fare = bus + car
-is_gerater = bus < car 
+is_greater = bus < car 
 
 print(total_fare)
-print(is_gerater)
+print(is_greater)
