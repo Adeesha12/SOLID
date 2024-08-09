@@ -438,7 +438,7 @@ None
 ### **Python Encapsulation** </summary>
 in python encapsulation is concept of bundling data and methods within single unit.
 so example when we write a class, we try to implement encapsulation.
-because all the methods, instances are bind by class it self 
+encapsulation protect your classes accidental changes and deletions and promote code reusablity and maintainability
 ```python
 class Employee:                           #// wrapping data and the methods that work on data within one unit (encapsulation)
     def __init__(self,name,project):
@@ -449,6 +449,20 @@ class Employee:                           #// wrapping data and the methods that
         print(f'{self.name} is working on {self.project}')
 ```
 
+accees modifier in encapsulation in python
+
+```python
+class Tree:
+    def __init__():
+        self.height = height
+
+pine = Tree(20)
+print(pine.height)
+```
+>output
+```
+20
+```
 </details>
 
 
