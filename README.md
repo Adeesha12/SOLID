@@ -463,6 +463,48 @@ print(pine.height)
 ```
 20
 ```
+
+no there is a issue becasue anyone can change the attribute of class 
+pine.height = 50 or pine.height = "mom" like this so we need to stop that 
+
+```python
+class Tree:
+    def __init__():
+        self._height = height # this is a protected member
+```
+now that developer can acces and can change attribute but it is not recommanded 
+
+```python
+class Tree:
+    def __init__():
+        self.__height = height # this is a private member
+```
+now this is a private memeber not if cannot chage from accessing directly like pine.height 
+now is throw and error
+
+for access to the private member we use getter and setter
+
+```python
+class Tree:
+   def __init__(self, height):
+       self.__height = height
+
+   def get_height(self):             #getter
+       return self.__height
+
+   def set_height(self, new_height): #setter
+       if not isinstance(new_height, int):
+           raise TypeError("Tree height must be an integer")
+       if 0 < new_height <= 40:
+           self.__height = new_height
+       else:
+           raise ValueError("Invalid height for a pine tree")
+
+
+pine = Tree(20)
+pine.get_height()
+
+```
 </details>
 
 
