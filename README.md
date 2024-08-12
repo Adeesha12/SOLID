@@ -550,6 +550,35 @@ pine.height = 15
 ```
 AttributeError: can't set attribute 'height'
 ```
+
+So, we add another method called height(self, new_height) that is wrapped by a height.setter decorator. Inside this method, we implement the logic that enforces the desired data type and range for height.
+
+```python
+class Tree:
+    def __init__(self, height):
+       self.__height = height
+
+    @property
+    def height(self):
+       return self.__height
+
+    @height.setter
+    def height(self, new_height):
+        if not isinstance(new_height, int):
+            raise TypeError("Tree height must be an integer")
+        if 0 < new_height <= 40:
+            self.__height = new_height
+        else:
+            raise ValueError("Invalid height for a pine tree")
+```
+
+Now, when a user tries to modify the height attribute, @height.setter is called, thus ensuring the correct value is passed
+```python
+pine = Tree(10)
+pine.height = 33  # Calling @height.setter
+pine.height = 45  # An error is raised
+
+```
 </details>
 
 
