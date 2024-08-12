@@ -464,7 +464,7 @@ print(pine.height)
 20
 ```
 
-no there is a issue becasue anyone can change the attribute of class 
+now there is a issue because anyone can change the attribute of class 
 pine.height = 50 or pine.height = "mom" like this so we need to stop that 
 
 ```python
@@ -504,6 +504,42 @@ class Tree:
 pine = Tree(20)
 pine.get_height()
 
+```
+
+we can use same way to the methods also 
+```python
+class MyClass:
+    def __init__(self, public_attr, _protected_attr, __private_attr):
+        self.public_attr = public_attr
+        self._protected_attr = _protected_attr
+        self.__private_attr = __private_attr
+
+    def public_method(self):
+        print("Public method")
+
+    def _protected_method(self):
+        print("Protected method")
+
+    def __private_method(self):
+        print("Private method")  
+```
+
+properties 
+```python
+class Tree:
+    def __init__(self, height):
+        self.__height = height
+
+    @property
+    def height(self):             #getter
+        return self.__height
+
+pine = Tree(17)
+print(pine.height)
+```
+>output
+```
+17
 ```
 </details>
 
