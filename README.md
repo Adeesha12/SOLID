@@ -541,6 +541,15 @@ print(pine.height)
 ```
 17
 ```
+But the best part is that users can’t modify it:
+
+```python
+pine.height = 15
+```
+>output
+```
+AttributeError: can't set attribute 'height'
+```
 </details>
 
 
